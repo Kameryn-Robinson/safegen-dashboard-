@@ -6,7 +6,7 @@ st.title("AI Observability Dashboard")
 
 # Load logs
 data = []
-with open("logs.jsonl", "r") as f:
+with open("../safegen-api/ai_usage_logs.jsonl", "r") as f:
     for line in f:
         data.append(json.loads(line))
 
